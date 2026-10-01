@@ -7,19 +7,23 @@ This projects goes to predict the medianHouse value (( the average price of a ho
 - Getting the dataset from sikit-learn library by 
 from sklearn.dataset import fetch_california_housing .
 - Measurig the multicolinearity between variables using corr() in pandas, visualizing it using heatmap.
-- Using XGBoost for modeling using XGBRegressor() and StandardScaler() in multiple ranges between features for normalizing all data to make the model more rapidly .
+- Using XGBoost for modeling using XGBRegressor() and StandardScaler() in multiple ranges between features for scaling to a comparable range
 - Using pipeline to combine  machine-learning steps into one workflow and make sure they are applied in the correct order.
 
 ## About housing California dataset 
 
 #### dimension : 20640rows × 9columns
 
-#### Test size = 0.3 × Train size 
+#### Test size = 30% of the data 
 
-#### R_squared for x_train prediction : 0.9425522464386936
-#### absolute mean error for x_train prediction :  0.1853034281894106
+#### R² for x_train prediction : 0.9425522464386936
+#### MAE for x_train prediction :  0.1853034281894106
 
-#### R_squared for x_test prediction :  0.8047279130760685
-#### absolute mean error for x_test prediction :  0.31150292865712204
+#### R² for x_test prediction :  0.8047279130760685
+
+The model achieves a higher R² score on the training data (0.943) than on the test data (0.805). Similarly, the MAE is lower on the training set than on the test set.
+This difference indicates that the XGBRegressor has learned the training data very well but performs less accurately on unseen data. Therefore, the model shows some degree of overfitting.
+However, the test R² of 0.805 indicates that the model still generalizes reasonably well to unseen data.
+#### MAE for x_test prediction :  0.31150292865712204
 
 
