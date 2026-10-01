@@ -24,7 +24,7 @@ from sklearn.dataset import fetch_california_housing .
 #### MAE for x_test prediction :  0.31150292865712204
 
 #### The model achieves a higher R² score on the training data (0.943) than on the test data (0.805). Similarly, the MAE is lower on the training set than on the test set.
-This difference indicates that the XGBRegressor has learned the training data very well but performs less accurately on unseen data. Therefore, the model shows some degree of overfitting.
+#### This difference indicates that the XGBRegressor has learned the training data very well but performs less accurately on unseen data. Therefore, the model shows some degree of overfitting.
 However, the test R² of 0.805 indicates that the model still generalizes reasonably well to unseen data.
 
 
