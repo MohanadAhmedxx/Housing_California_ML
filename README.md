@@ -25,4 +25,14 @@ The model achieves a higher R² score on the training data (0.943) than on the t
 This difference indicates that the XGBRegressor has learned the training data very well but performs less accurately on unseen data. Therefore, the model shows some degree of overfitting.
 However, the test R² of 0.805 indicates that the model still generalizes reasonably well to unseen data.
 
+### How to run ?
+
+1. Download or clone the repository.
+2. Make sure Python and Jupyter Notebook are installed.
+3. Install the required libraries.
+4. Open the .ipynb file using Jupyter Notebook.
+5. Run the cells from top to bottom.
+
+* Dataset can't be used unless you open the internet if it is from sikit-learn library generally. 
+
 
