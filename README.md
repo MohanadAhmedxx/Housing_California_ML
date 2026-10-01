@@ -10,10 +10,14 @@ from sklearn.dataset import fetch_california_housing .
 - Using XGBoost for modeling using XGBRegressor() and StandardScaler() in multiple ranges between features for normalizing all data to make the model more rapidly .
 - Using pipeline to combine  machine-learning steps into one workflow and make sure they are applied in the correct order.
 
-#### housing California dataset 
+### About housing California dataset 
 
-dimension : 20640rows × 9columns
-Test size = 0.3 × Train size 
+#### dimension : 20640rows × 9columns
+
+#### Test size = 0.3 × Train size 
+
+R_squared for x_train prediction :  0.9425522464386936
+absolute mean error for x_train prediction :  0.1853034281894106
 
 R_squared for x_test prediction :  0.8047279130760685
 absolute mean error for x_test prediction :  0.31150292865712204
